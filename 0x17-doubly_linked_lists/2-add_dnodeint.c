@@ -2,12 +2,11 @@
 #include<stdio.h>
 #include "lists.h"
 
-/*
- *@add_dnodeint - function that creates a new node
- *dlistint_t - element type in the list
- *@n: Data contained in the new node
- *@head: Pointer to the pointer to the first node
- *Return: address of new node if succesful, or NULL if failed
+/**
+ * add_dnodeint - Add a new node at the beginning of a dlistint_t list.
+ * @head: A pointer to the head of the list.
+ * @n: The value to store in the new node.
+ * Return: The address of the new element, or NULL if it failed.
  */
 
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)

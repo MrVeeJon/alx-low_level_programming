@@ -12,5 +12,5 @@ gcc -shared -o liball.so $source_files
 if [ $? -eq 0 ]; then
 	echo "Dynamic library liball.so created."
 else
-	exho "failed. Check source file errors."
+	echo "failed. Check source file errors."
 fi
